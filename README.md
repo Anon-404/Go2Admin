@@ -1,32 +1,32 @@
+
 # Go2Admin 🔎
-**Web Admin panel finder**  
+**Web Admin Panel Finder**  
 *Written in Go*
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Anon-404/My-assets/main/Go2Admin/Go2Admin.jpg" alt="GoFuzzer Logo" width="200"/>
+  <img src="https://raw.githubusercontent.com/Anon-404/My-assets/main/Go2Admin/Go2Admin.jpg" alt="Go2Admin Logo" width="200"/>
 </div>
 
 ## Features ✨
 
-- 🔍 **Web admin-panl Brute-Forcing**  
-  Performs targeted brute-forcing to discover hidden directories, files and admin-panel on a web server.
+- 🔍 **Web Admin Panel Brute-Forcing:**  
+  Discovers hidden directories, files, and admin panels on a web server using brute-forcing techniques.
 
 - ⚡ **Efficient Scanning:**  
-  Utilizes concurrent requests to speed up the scanning process, allowing for faster discovery of paths and files.
+  Utilizes concurrent requests to speed up the scanning process, ensuring faster discovery of paths and files.
 
 - 🕵️‍♂️ **Detailed Status Reporting:**  
-  Provides comprehensive feedback on server responses with color-coded status codes for easy identification.
+  Provides feedback on server responses with color-coded status codes for easy identification.
 
 - 🎯 **User-Friendly Interface:**  
-  Includes a clear and concise command-line interface with helpful usage instructions and examples.
+  Offers a clear and concise command-line interface with helpful usage instructions and examples.
 
 - 📖 **Comprehensive User Manual:**  
-  Well-documented help and version information to assist users in navigating and utilizing the tool effectively.
+  Includes well-documented help and version information to assist users in navigating and utilizing the tool effectively.
 
 ## Installation 🛠️
 
-
-#### Step 1: Install Go
+#### Step 1: Install Golang
 - **Arch-based Linux:**
   ```bash
   sudo pacman -S go
@@ -43,7 +43,6 @@
   ```bash
   pkg install golang -y
   ```
-
 - **OpenSUSE:**
   ```bash
   sudo zypper install go
@@ -52,8 +51,6 @@
   ```bash
   sudo xbps-install go
   ```
-
-
 
 #### Step 2: Clone and Build
 - **For Linux:**
@@ -74,40 +71,40 @@
 ```bash
 ./Go2Admin -d <domain>
 ```
-- with custom wordlist
-```bash
-./Go2Admin -d <domain> wordlist.txt
-```
+
+- **Using a custom wordlist:**
+  ```bash
+  ./Go2Admin -d <domain> wordlist.txt
+  ```
 
 ### Main Options:
 
 - **`-d`, `--domain`**  
-  🛠 **domain input**  
-  Enables debugging mode to show detailed responses for all status codes from 100 to 599.
+  🛠 **Domain Input:**  
+  Specify the target domain for scanning.
 
 ### Additional Options:
 
 - **`-h`, `--help`**  
-  📝 **Help**  
+  📝 **Help:**  
   Displays this help page with descriptions of all available commands and options.
 
 - **`-v`, `--version`**  
-  🆚 **Version**  
-  Prints the current version number of GoFuzzer.
+  🆚 **Version:**  
+  Prints the current version number of Go2Admin.
 
 ### Examples:
 
-- **build-in wordlist:**
+- **Using the built-in wordlist:**
   ```bash
   ./Go2Admin -d <domain>
   ```
-- **custom wordlist:**
+- **Using a custom wordlist:**
   ```bash
-  ./Go2Admin-d <domain> wordlist.txt
+  ./Go2Admin -d <domain> wordlist.txt
   ```
 
-For more information or assistance, use the `-h` option to display help page.
-
+For more information or assistance, use the `-h` option to display the help page.
 
 ## Contributions 🤝
 Contributions are welcome! Feel free to open issues or submit pull requests.
