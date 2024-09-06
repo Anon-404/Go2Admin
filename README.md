@@ -58,27 +58,31 @@
 #### Step 2: Clone and Build
 - **For Linux:**
   ```bash
-  git clone https://github.com/Anon-404/GoFuzzer 
-  cd GoFuzzer 
+  git clone https://github.com/Anon-404/Go2Admin 
+  cd Go2Admin 
   go build -o Go2Admin 
   ```
 - **For Termux:**
   ```bash
-  git clone https://github.com/Anon-404/GoFuzzer 
-  cd GoFuzzer 
-  go build -o Go2Admin 
+  git clone https://github.com/Anon-404/Go2Admin
+  cd Go2Admin
+  go build -o Go2Admin
   ```
 
 ## Usage 🧑‍💻
 
 ```bash
-GoFuzzer <option> <domain> <wordlist>
+./Go2Admin -d <domain>
+```
+- with custom wordlist
+```bash
+./Go2Admin -d <domain> wordlist.txt
 ```
 
 ### Main Options:
 
 - **`-d`, `--domain`**  
-  🛠 **Debug Mode**  
+  🛠 **domain input**  
   Enables debugging mode to show detailed responses for all status codes from 100 to 599.
 
 ### Additional Options:
@@ -93,9 +97,13 @@ GoFuzzer <option> <domain> <wordlist>
 
 ### Examples:
 
-- **Enable debugging mode:**
+- **build-in wordlist:**
   ```bash
-  GoFuzzer -d example.com wordlist.txt
+  ./Go2Admin -d <domain>
+  ```
+- **custom wordlist:**
+  ```bash
+  ./Go2Admin-d <domain> wordlist.txt
   ```
 
 For more information or assistance, use the `-h` option to display help page.
